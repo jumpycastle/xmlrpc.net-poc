@@ -15,10 +15,8 @@ Proof of Concept (PoC) for XML-RPC.NET XXE
 
 3. Request a non-existent file on the remote server (e.g. "winFAKE.ini")
 
-![xml-rpc-2](https://user-images.githubusercontent.com/3679232/207167707-80d2eb52-6402-496e-acb0-12ed9ef30400.png)
+![xml-rpc-2](https://user-images.githubusercontent.com/3679232/207168416-9c801f2f-27ca-47c4-a5df-a4f66af98a58.png)
 
 4. Request an existent file on the remote server (e.g. "win.ini"). Note the error message is different when requesting access to an existing file. This validates our XXE is working as intended.
 
 ![xml-rpc-3](https://user-images.githubusercontent.com/3679232/207167024-7338126f-6736-4f14-9a64-b6a0ecc7417e.png)
-
-
