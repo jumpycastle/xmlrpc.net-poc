@@ -1,5 +1,5 @@
 # xmlrpc.net-poc
-Proof of Concept (PoC) for XML-RPC.NET XXE
+Proof of Concept (PoC) for CookComputing XML-RPC.NET XXE <2.5.0
 
 1. Identify a vulnerable pingback.aspx endpoint. "CookComputing" tends to be a strong signal.
 
