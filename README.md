@@ -1,6 +1,8 @@
 # [CVE-2022-47514] Proof of Concept 
 **CVE (+Exploit) Author:** Farzan Karimi
 
+**CVE Summary:**  An XML external entity (XXE) injection vulnerability in http://XML-RPC.NET before 2.5.0 allows remote authenticated users to conduct server-side request forgery (SSRF) attacks, as demonstrated by a pingback.aspx POST request
+
 **CVE Details:** https://cve.mitre.org/cgi-bin/cvename.cgi?name=2022-47514
 
 # PoC for CookComputing XML-RPC.NET XXE <2.5.0
