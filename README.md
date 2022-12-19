@@ -1,6 +1,7 @@
 # [CVE-2022-47514] Proof of Concept 
 **CVE (+Exploit) Author:** Farzan Karimi
-**CVE:** https://cve.mitre.org/cgi-bin/cvename.cgi?name=2022-47514
+
+**CVE Details:** https://cve.mitre.org/cgi-bin/cvename.cgi?name=2022-47514
 
 # PoC for CookComputing XML-RPC.NET XXE <2.5.0
 1. Identify a vulnerable pingback.aspx endpoint. Identifying pingback endpoints with "CookComputing" <2.5 version footers tend to be strong signals.
