@@ -1,7 +1,7 @@
-# Proof of Concept (PoC) for CookComputing XML-RPC.NET XXE <2.5.0
-Author: Farzan Karimi
+# [CVE-2022-47514] Proof of Concept (PoC) for CookComputing XML-RPC.NET XXE <2.5.0
+CVE (+Exploit) Author: Farzan Karimi
 
-#PoC
+# PoC
 1. Identify a vulnerable pingback.aspx endpoint. Identifying pingback endpoints with "CookComputing" <2.5 version footers tend to be strong signals.
 
 ![xml-rpc-1](https://user-images.githubusercontent.com/3679232/207168120-9465cd3d-2f3d-4ae0-b308-090de2b2501f.png)
@@ -21,3 +21,6 @@ Author: Farzan Karimi
 4. Request an existent file on the remote server (e.g. "win.ini"). Note the error message is different when requesting access to an existing file. This validates our XXE is working as intended.
 
 ![xml-rpc-3](https://user-images.githubusercontent.com/3679232/207167024-7338126f-6736-4f14-9a64-b6a0ecc7417e.png)
+
+# Mitigation
+Installations using a version prior to version 2.5.0 should update to version 2.5.0. 
