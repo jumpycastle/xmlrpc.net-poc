@@ -68,7 +68,7 @@ And the targetted file (e.g. win.ini) is exfiltrated and written to the attacker
 
 ![xxe-data-exfil](https://user-images.githubusercontent.com/3679232/210012160-eab20862-cd15-4c6a-aa29-41001ec17519.png)
 
-Note: if using Azure to host your evil XML, it may take time for the file to appear in your Azure web logs. Based on experience, replaying the request multiple times may trigger Azure garbage collection to update the logs sooner.
+Note: if using Azure to host your evil XML (external DTD), it may take time for the file to appear in the Azure web logs. Based on experience, replaying the request multiple times may trigger Azure garbage collection to update the logs sooner.
 
 # Mitigation
 Installations using a version prior to version 2.5.0 should update to version 2.5.0. This mitigation disables XML entity expansion.
