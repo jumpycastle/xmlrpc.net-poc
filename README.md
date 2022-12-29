@@ -7,7 +7,7 @@
 
 **CVE Details:** https://cve.mitre.org/cgi-bin/cvename.cgi?name=2022-47514
 
-# PoC for CookComputing XML-RPC.NET XXE <2.5.0 [proXXE]
+# PoC for CookComputing XML-RPC.NET XXE <2.5.0
 1. Identify a vulnerable pingback.aspx endpoint. Identifying pingback endpoints with "CookComputing" <2.5 version footers tend to be strong signals.
 
 ![xml-rpc-1](https://user-images.githubusercontent.com/3679232/207168120-9465cd3d-2f3d-4ae0-b308-090de2b2501f.png)
