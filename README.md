@@ -1,7 +1,9 @@
-# [CVE-2022-47514] Proof of Concept 
+# [CVE-2022-47514] proXXE Proof of Concept 
 **CVE (+Exploit) Author:** Farzan Karimi
 
 **CVE Summary:**  An XML external entity (XXE) injection vulnerability in http://XML-RPC.NET before 2.5.0 allows remote authenticated users to conduct server-side request forgery (SSRF) attacks, as demonstrated by a pingback.aspx POST request. While the POST response initially appears to be a limited XXE file enumeration vulnerability, it can be elevated to full file exfiltration using an external DTD, hosted by a proxy server. Hence the CVE name, proXXE. :)
+
+**Severity:** High
 
 **CVE Details:** https://cve.mitre.org/cgi-bin/cvename.cgi?name=2022-47514
 
