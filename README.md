@@ -1,7 +1,7 @@
-# [CVE-2022-47514] Proof of Concept: XML-RPC.NET XXE - File Exfiltration
+# [CVE-2022-47514] Proof of Concept: XML-RPC.NET XXE File Exfiltration
 **CVE (+Exploit) Author:** Farzan Karimi
 
-**CVE Summary:**  An XML external entity (XXE) injection vulnerability in http://XML-RPC.NET before 2.5.0 allows remote authenticated users to conduct server-side request forgery (SSRF) attacks, as demonstrated by a pingback.aspx POST request. While the POST response appears to be a limited XXE file enumeration vulnerability, it can be elevated to full file exfiltration using the following steps.
+**CVE Summary:**  An XML external entity (XXE) injection vulnerability in http://XML-RPC.NET before 2.5.0 allows remote authenticated users to conduct server-side request forgery (SSRF) attacks, as demonstrated by a pingback.aspx POST request. While the POST response initially appears to be a limited XXE file enumeration vulnerability, it can be elevated to full file exfiltration.
 
 **CVE Details:** https://cve.mitre.org/cgi-bin/cvename.cgi?name=2022-47514
 
@@ -71,4 +71,4 @@ And the targetted file (e.g. win.ini) is exfiltrated and written to the attacker
 Note: if using Azure to host your evil XML, it may take time for the file to appear in your Azure web logs. Based on experience, replaying the request multiple times may trigger Azure garbage collection to update the logs sooner.
 
 # Mitigation
-Installations using a version prior to version 2.5.0 should update to version 2.5.0. 
+Installations using a version prior to version 2.5.0 should update to version 2.5.0. This mitigation disables XML entity expansion.
