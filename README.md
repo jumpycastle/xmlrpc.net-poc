@@ -28,7 +28,7 @@
 
 # 12/29 Update: File Exfiltration
 
-*Summary:* Some XXEs don't directly return file contents in HTTP server responses. These cases don't actually demonstrate how the true impact of how the vulnerability could be exploited. What increases this vulnerability to high severity is the ability exfiltrate file data. The following steps demonstrate how an attacker can still achieve file exfiltration by hosting a malicious DTD on a system that they control, and then invoking the external DTD from within the in-band XXE payload. 
+*Summary:* Some XXEs don't directly return file contents in HTTP server responses. These cases don't actually demonstrate the true impact of exploitation, or the ability to exfiltrate file data. The following steps demonstrate how an attacker can still achieve file exfiltration via XXE on XML-RPC.NET by hosting a malicious DTD on a system they control, and then invoke the external DTD from within the in-band XXE payload. 
 
 5. Host a malicious DTD on a file server the attacker controls. The system should host a malicious XML, containing:
 
