@@ -1,11 +1,11 @@
-# [CVE-2022-47514] Proof of Concept: XML-RPC.NET XXE File Exfiltration [proXXE]
+# [CVE-2022-47514] proXXE Proof of Concept 
 **CVE (+Exploit) Author:** Farzan Karimi
 
 **CVE Summary:**  An XML external entity (XXE) injection vulnerability in http://XML-RPC.NET before 2.5.0 allows remote authenticated users to conduct server-side request forgery (SSRF) attacks, as demonstrated by a pingback.aspx POST request. While the POST response initially appears to be a limited XXE file enumeration vulnerability, it can be elevated to full file exfiltration using an external DTD, hosted by a proxy server. Hence the name, proXXE. :)
 
 **CVE Details:** https://cve.mitre.org/cgi-bin/cvename.cgi?name=2022-47514
 
-# PoC for CookComputing XML-RPC.NET XXE <2.5.0
+# PoC for CookComputing XML-RPC.NET XXE <2.5.0 [proXXE]
 1. Identify a vulnerable pingback.aspx endpoint. Identifying pingback endpoints with "CookComputing" <2.5 version footers tend to be strong signals.
 
 ![xml-rpc-1](https://user-images.githubusercontent.com/3679232/207168120-9465cd3d-2f3d-4ae0-b308-090de2b2501f.png)
